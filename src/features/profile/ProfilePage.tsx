@@ -26,7 +26,7 @@ export function ProfilePage({ onSignOut }: { onSignOut: (path: string) => void }
       <div className="page-header">
         <div>
           <h2>Profile</h2>
-          <p className="page-count">Your SecureVault account.</p>
+          <p className="page-count">Your Testing Angular App account.</p>
         </div>
       </div>
 

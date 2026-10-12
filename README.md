@@ -1,8 +1,8 @@
-# SecureVault
+# Testing Angular App
 
 A premium, secure-feeling personal password manager: store, search, and generate credentials and other sensitive items behind a local master-password vault.
 
-SecureVault is a **local-only prototype** in this version. Your items, settings and audit trail live on the device in your browser's local storage — nothing is sent to a server, and backend sync, sharing and organizations are out of scope. Master passwords are stored as an unrecoverable hash so they can never be retrieved. The app is a prototype and is not marketed as production-secure.
+Testing Angular App is a **local-only prototype** in this version. Your items, settings and audit trail live on the device in your browser's local storage — nothing is sent to a server, and backend sync, sharing and organizations are out of scope. Master passwords are stored as an unrecoverable hash so they can never be retrieved. The app is a prototype and is not marketed as production-secure.
 
 ## Setup
 

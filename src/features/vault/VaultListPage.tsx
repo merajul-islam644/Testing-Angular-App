@@ -61,7 +61,14 @@ export function VaultListPage({ view }: { view: VaultView }) {
     <section className="vault-page">
       <div className="page-header">
         <div>
-          <h2>{titles[view]}</h2>
+          {view === "all" ? (
+            <div className="welcome-block">
+              <h2>Welcome to Testing Angular App</h2>
+              <p>Your secure place to store, search and generate credentials and other sensitive items — all kept safely on this device.</p>
+            </div>
+          ) : (
+            <h2>{titles[view]}</h2>
+          )}
           <p className="page-count">{visible.length} {visible.length === 1 ? "item" : "items"}</p>
         </div>
         <div className="page-actions">

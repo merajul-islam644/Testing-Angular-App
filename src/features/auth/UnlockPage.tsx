@@ -32,7 +32,7 @@ export function UnlockPage({ email, onUnlocked }: { email: string; onUnlocked: (
   return (
     <div className="auth-screen">
       <form className="auth-card" onSubmit={handleSubmit}>
-        <div className="auth-brand"><ShieldLogo size={30} /><span>SecureVault</span></div>
+        <div className="auth-brand"><ShieldLogo size={30} /><span>Testing Angular App</span></div>
         <h2>Welcome back</h2>
         <p>Enter your details to unlock your vault.</p>
         <label className="form-field">

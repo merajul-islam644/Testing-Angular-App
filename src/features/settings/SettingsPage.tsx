@@ -17,7 +17,7 @@ export function SettingsPage() {
       <div className="page-header">
         <div>
           <h2>Settings</h2>
-          <p className="page-count">Manage how SecureVault looks and behaves.</p>
+          <p className="page-count">Manage how Testing Angular App looks and behaves.</p>
         </div>
       </div>
 
@@ -26,7 +26,7 @@ export function SettingsPage() {
         <div className="setting-row">
           <div>
             <strong>Theme</strong>
-            <p className="muted">Applies instantly across SecureVault.</p>
+            <p className="muted">Applies instantly across Testing Angular App.</p>
           </div>
           <div className="segmented">
             {(["light", "dark", "system"] as const).map((value) => (
@@ -37,7 +37,7 @@ export function SettingsPage() {
         <div className="setting-row">
           <div>
             <strong>Language</strong>
-            <p className="muted">SecureVault is available in English.</p>
+            <p className="muted">Testing Angular App is available in English.</p>
           </div>
           <select className="select-input" value={settings.language} onChange={(e) => settingsStore.save({ language: e.target.value as "en" })}>
             <option value="en">English</option>

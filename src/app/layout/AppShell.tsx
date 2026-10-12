@@ -72,7 +72,7 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
             {collapsed ? null : (
               <a className="brand" href="/" onClick={(event) => { event.preventDefault(); onNavigate("/"); }}>
                 <ShieldLogo size={30} />
-                <span>SecureVault</span>
+                <span>Testing Angular App</span>
               </a>
             )}
             <button className="icon-button sidebar-collapse-toggle" onClick={() => setCollapsedPref((value) => !value)} aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}>

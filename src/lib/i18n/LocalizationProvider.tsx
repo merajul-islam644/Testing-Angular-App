@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { defaultDictionary } from "./dictionary";
 import type { TranslationKey } from "./dictionary";
 
-// SecureVault ships English-only in this version (per the product brief), so
+// Testing Angular App ships English-only in this version (per the product brief), so
 // the dictionary lives locally and the language setting is limited to "en".
 type LocalizationLanguage = { code: string; name: string };
 

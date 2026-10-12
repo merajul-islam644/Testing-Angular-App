@@ -1,5 +1,5 @@
 export const defaultDictionary = {
-  "app.name": "SecureVault",
+  "app.name": "Testing Angular App",
   "nav.vault": "Vault",
   "nav.logout": "Sign out",
   "auth.welcome": "Welcome back",

@@ -31,7 +31,7 @@ export function SetupPage({ onCreated }: { onCreated: () => void }) {
   return (
     <div className="auth-screen">
       <form className="auth-card" onSubmit={handleSubmit}>
-        <div className="auth-brand"><ShieldLogo size={30} /><span>SecureVault</span></div>
+        <div className="auth-brand"><ShieldLogo size={30} /><span>Testing Angular App</span></div>
         <h2>Create Your Secure Vault</h2>
         <p>Set a master password to protect your items. It unlocks the vault on this device.</p>
         <label className="form-field">
