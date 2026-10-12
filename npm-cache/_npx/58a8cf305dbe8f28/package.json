@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@angular/cli": "^22.2.2"
+  },
+  "_npx": {
+    "packages": [
+      "@angular/cli@latest"
+    ]
+  }
+}

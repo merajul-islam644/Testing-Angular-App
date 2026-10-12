@@ -1,0 +1,37 @@
+<section class="list">
+  @if (store.totalCount() === 0) {
+    <div class="empty-state">
+      <mat-icon class="empty-icon">task_alt</mat-icon>
+      <p>All clear! Add your first task above.</p>
+    </div>
+  } @else {
+    <mat-button-toggle-group
+      class="filters"
+      hideSingleSelectionIndicator
+      [value]="store.currentFilter()"
+      (change)="store.setFilter($event.value)"
+      aria-label="Filter tasks"
+    >
+      @for (f of filters; track f.value) {
+        <mat-button-toggle [value]="f.value">{{ f.label }}</mat-button-toggle>
+      }
+    </mat-button-toggle-group>
+
+    <div class="tasks">
+      @for (task of store.visibleTasks(); track task.id) {
+        <app-task-item [task]="task" />
+      } @empty {
+        <p class="empty-note">No tasks match this filter.</p>
+      }
+    </div>
+
+    <footer class="footer">
+      <span>
+        {{ store.activeCount() }} task{{ store.activeCount() === 1 ? '' : 's' }} left
+      </span>
+      @if (store.completedCount() > 0) {
+        <button mat-button (click)="store.clearCompleted()">Clear completed</button>
+      }
+    </footer>
+  }
+</section>

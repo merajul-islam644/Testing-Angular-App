@@ -1,0 +1,24 @@
+<div class="task" [class.completed]="task().completed">
+  <mat-checkbox class="check" [checked]="task().completed" (change)="store.toggle(task().id)">
+    {{ task().title }}
+  </mat-checkbox>
+
+  <div class="actions">
+    <button
+      mat-icon-button
+      (click)="edit()"
+      matTooltip="Edit"
+      [attr.aria-label]="'Edit ' + task().title"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      (click)="store.remove(task().id)"
+      matTooltip="Delete"
+      [attr.aria-label]="'Delete ' + task().title"
+    >
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+</div>

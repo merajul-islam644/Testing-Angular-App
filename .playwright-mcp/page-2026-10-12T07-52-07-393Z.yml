@@ -1,0 +1,59 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Tasks" [level=1] [ref=e146]
+        - paragraph [ref=e7]: A tiny Angular + Material demo
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - generic: New task
+          - textbox "New task" [ref=e147]:
+            - /placeholder: e.g. Water the plants
+        - button "Add" [disabled]:
+          - img [aria-hidden]: add
+      - generic [ref=e18]:
+        - radiogroup "Filter tasks" [ref=e148]:
+          - radio "All" [checked] [ref=e149] [cursor=pointer]
+          - radio "Active" [ref=e150] [cursor=pointer]
+          - radio "Done" [ref=e151] [cursor=pointer]
+        - generic [ref=e26]:
+          - generic [ref=e85]:
+            - generic [ref=e87]:
+              - checkbox "Buy groceries and coffee" [ref=e152] [cursor=pointer]
+              - generic [ref=e91] [cursor=pointer]: Buy groceries and coffee
+            - generic [ref=e92]:
+              - button "Edit Buy groceries and coffee" [active] [ref=e153] [cursor=pointer]:
+                - img [aria-hidden] [ref=e94]: edit
+              - button "Delete Buy groceries and coffee" [ref=e154] [cursor=pointer]:
+                - img [aria-hidden] [ref=e98]: delete
+          - generic [ref=e28]:
+            - generic [ref=e30]:
+              - checkbox "Explore the Angular docs" [checked] [ref=e155] [cursor=pointer]
+              - generic [ref=e34] [cursor=pointer]: Explore the Angular docs
+            - generic [ref=e35]:
+              - button "Edit Explore the Angular docs" [ref=e156] [cursor=pointer]:
+                - img [aria-hidden] [ref=e37]: edit
+              - button "Delete Explore the Angular docs" [ref=e157] [cursor=pointer]:
+                - img [aria-hidden] [ref=e41]: delete
+          - generic [ref=e45]:
+            - generic [ref=e47]:
+              - checkbox "Build my first component" [checked] [ref=e158] [cursor=pointer]
+              - generic [ref=e51] [cursor=pointer]: Build my first component
+            - generic [ref=e52]:
+              - button "Edit Build my first component" [ref=e159] [cursor=pointer]:
+                - img [aria-hidden] [ref=e54]: edit
+              - button "Delete Build my first component" [ref=e160] [cursor=pointer]:
+                - img [aria-hidden] [ref=e58]: delete
+          - generic [ref=e62]:
+            - generic [ref=e64]:
+              - checkbox "Ship the todo app 🚀" [ref=e161] [cursor=pointer]
+              - generic [ref=e68] [cursor=pointer]: Ship the todo app 🚀
+            - generic [ref=e69]:
+              - button "Edit Ship the todo app 🚀" [ref=e162] [cursor=pointer]:
+                - img [aria-hidden] [ref=e71]: edit
+              - button "Delete Ship the todo app 🚀" [ref=e163] [cursor=pointer]:
+                - img [aria-hidden] [ref=e75]: delete
+        - generic [ref=e78]:
+          - generic [ref=e79]: 2 tasks left
+          - button "Clear completed" [ref=e164]
+  - generic: Edit

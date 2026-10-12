@@ -1,0 +1,73 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\bin\npm-cli.js
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.8.0
+1 info using npm@11.8.0
+2 info using node@v24.9.0
+2 info using node@v24.9.0
+3 silly config load:file:C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\npmrc
+3 silly config load:file:C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\npmrc
+4 silly config load:file:d:\MY_PORTFOLIO\Testing-Angular-App\.npmrc
+5 silly config load:file:C:\Users\user\.npmrc
+4 silly config load:file:d:\MY_PORTFOLIO\Testing-Angular-App\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+5 silly config load:file:C:\Users\user\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm exec @playwright/mcp@latest
+7 verbose title npm exec @playwright/mcp@latest
+8 verbose argv "exec" "--" "@playwright/mcp@latest"
+8 verbose argv "exec" "--" "@playwright/mcp@latest"
+9 verbose logfile logs-max:10 dir:D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_19_24_718Z-
+9 verbose logfile logs-max:10 dir:D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_19_24_718Z-
+10 verbose logfile D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_19_24_718Z-debug-0.log
+10 verbose logfile D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_19_24_718Z-debug-0.log
+11 silly logfile done cleaning log files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 http fetch GET 200 https://registry.npmjs.org/@playwright%2fmcp 317ms (cache miss)
+13 http fetch GET 200 https://registry.npmjs.org/npm 470ms
+14 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+14 http fetch GET 200 https://registry.npmjs.org/@playwright%2fmcp 1306ms (cache miss)
+15 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+15 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+16 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+16 warn exec The following package was not found and will be installed: @playwright/mcp@0.0.83
+17 silly idealTree buildDeps
+18 silly fetch manifest @playwright/mcp@0.0.83
+19 silly packumentCache full:https://registry.npmjs.org/@playwright%2fmcp cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/@playwright%2fmcp 665ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/@playwright%2fmcp set size:undefined disposed:false
+22 silly placeDep ROOT @playwright/mcp@0.0.83 OK for:  want: 0.0.83
+23 silly fetch manifest playwright@1.64.0-alpha-1790635538000
+24 silly packumentCache full:https://registry.npmjs.org/playwright cache-miss
+25 silly fetch manifest playwright-core@1.64.0-alpha-1790635538000
+26 silly packumentCache full:https://registry.npmjs.org/playwright-core cache-miss
+27 http fetch GET 200 https://registry.npmjs.org/playwright 1334ms (cache miss)
+28 silly packumentCache full:https://registry.npmjs.org/playwright set size:undefined disposed:false
+29 http fetch GET 200 https://registry.npmjs.org/playwright-core 1911ms (cache miss)
+30 silly packumentCache full:https://registry.npmjs.org/playwright-core set size:undefined disposed:false
+31 silly placeDep ROOT playwright@1.64.0-alpha-1790635538000 OK for: @playwright/mcp@0.0.83 want: 1.64.0-alpha-1790635538000
+32 silly placeDep ROOT playwright-core@1.64.0-alpha-1790635538000 OK for: @playwright/mcp@0.0.83 want: 1.64.0-alpha-1790635538000
+33 silly reify moves {}
+34 silly audit bulk request {
+34 silly audit   '@playwright/mcp': [ '0.0.83' ],
+34 silly audit   playwright: [ '1.64.0-alpha-1790635538000' ],
+34 silly audit   'playwright-core': [ '1.64.0-alpha-1790635538000' ]
+34 silly audit }
+35 http cache playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.0-alpha-1790635538000.tgz 0ms (cache hit)
+36 http cache playwright@https://registry.npmjs.org/playwright/-/playwright-1.64.0-alpha-1790635538000.tgz 1ms (cache hit)
+37 http cache @playwright/mcp@https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.83.tgz 1ms (cache hit)
+38 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.0-alpha-1790635538000.tgz. Extracting by manifest.
+39 silly tarball no local data for playwright@https://registry.npmjs.org/playwright/-/playwright-1.64.0-alpha-1790635538000.tgz. Extracting by manifest.
+40 silly tarball no local data for @playwright/mcp@https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.83.tgz. Extracting by manifest.
+41 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 332ms
+42 silly audit report {}
+43 http fetch GET 200 https://registry.npmjs.org/@playwright/mcp/-/mcp-0.0.83.tgz 883ms (cache miss)
+44 http fetch GET 200 https://registry.npmjs.org/playwright/-/playwright-1.64.0-alpha-1790635538000.tgz 1941ms (cache miss)
+45 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.64.0-alpha-1790635538000.tgz 3021ms (cache miss)
+46 verbose cwd d:\MY_PORTFOLIO\Testing-Angular-App
+47 verbose os Windows_NT 10.0.19045
+48 verbose node v24.9.0
+49 verbose npm  v11.8.0
+50 verbose exit 0
+51 info ok

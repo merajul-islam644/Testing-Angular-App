@@ -1,0 +1,72 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - heading [level=1] [ref=e101]: Tasks
+        - paragraph [ref=e7]: A tiny Angular + Material demo
+      - generic [ref=e9]:
+        - generic [ref=e12]:
+          - generic: New task
+          - textbox [ref=e102]:
+            - /placeholder: e.g. Water the plants
+        - button [disabled]:
+          - img [aria-hidden]: add
+          - generic: Add
+      - generic [ref=e18]:
+        - radiogroup [ref=e103]:
+          - radio [checked] [ref=e104] [cursor=pointer]:
+            - generic [ref=e21]: All
+          - radio [ref=e105] [cursor=pointer]:
+            - generic [ref=e23]: Active
+          - radio [ref=e106] [cursor=pointer]:
+            - generic [ref=e25]: Done
+        - generic [ref=e26]:
+          - generic [ref=e85]:
+            - generic [ref=e87]:
+              - checkbox [ref=e107] [cursor=pointer]
+              - generic [ref=e91] [cursor=pointer]: Buy groceries
+            - generic [ref=e92]:
+              - button [ref=e108] [cursor=pointer]:
+                - img [aria-hidden] [ref=e94]: edit
+              - button [ref=e109] [cursor=pointer]:
+                - img [aria-hidden] [ref=e98]: delete
+          - generic [ref=e28]:
+            - generic [ref=e30]:
+              - checkbox [checked] [ref=e110] [cursor=pointer]
+              - generic [ref=e34] [cursor=pointer]: Explore the Angular docs
+            - generic [ref=e35]:
+              - button [ref=e111] [cursor=pointer]:
+                - img [aria-hidden] [ref=e37]: edit
+              - button [ref=e112] [cursor=pointer]:
+                - img [aria-hidden] [ref=e41]: delete
+          - generic [ref=e45]:
+            - generic [ref=e47]:
+              - checkbox [checked] [ref=e113] [cursor=pointer]
+              - generic [ref=e51] [cursor=pointer]: Build my first component
+            - generic [ref=e52]:
+              - button [ref=e114] [cursor=pointer]:
+                - img [aria-hidden] [ref=e54]: edit
+              - button [ref=e115] [cursor=pointer]:
+                - img [aria-hidden] [ref=e58]: delete
+          - generic [ref=e62]:
+            - generic [ref=e64]:
+              - checkbox [ref=e116] [cursor=pointer]
+              - generic [ref=e68] [cursor=pointer]: Ship the todo app 🚀
+            - generic [ref=e69]:
+              - button [ref=e117] [cursor=pointer]:
+                - img [aria-hidden] [ref=e71]: edit
+              - button [ref=e118] [cursor=pointer]:
+                - img [aria-hidden] [ref=e75]: delete
+        - generic [ref=e78]:
+          - generic [ref=e79]: 2 tasks left
+          - button [ref=e119]:
+            - generic [ref=e81]: Clear completed
+  - dialog [ref=e123]:
+    - generic [ref=e126]:
+      - heading "Edit task" [level=2] [ref=e127]
+      - generic [ref=e131]:
+        - generic: Title
+        - textbox "Title" [active] [ref=e134]: Buy groceries
+      - generic [ref=e136]:
+        - button "Cancel" [ref=e137]
+        - button "Save" [ref=e141]

@@ -1,0 +1,19 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.8.0
+2 info using node@v24.9.0
+3 silly config load:file:C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\npmrc
+4 silly config load:file:D:\MY_PORTFOLIO\Testing-Angular-App\todo-app\.npmrc
+5 silly config load:file:C:\Users\user\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm view @angular/material@21 name version deprecated dependencies peerDependencies devDependencies homepage schematics ng-add ng-update
+8 verbose argv "view" "--json" "@angular/material@21" "name" "version" "deprecated" "dependencies" "peerDependencies" "devDependencies" "homepage" "schematics" "ng-add" "ng-update"
+9 verbose logfile logs-max:10 dir:D:\MY_PORTFOLIO\Testing-Angular-App\todo-app\npm-cache\_logs\2026-10-12T07_39_07_270Z-
+10 verbose logfile D:\MY_PORTFOLIO\Testing-Angular-App\todo-app\npm-cache\_logs\2026-10-12T07_39_07_270Z-debug-0.log
+11 silly logfile done cleaning log files
+12 http fetch GET 200 https://registry.npmjs.org/@angular%2fmaterial 1321ms (cache miss)
+13 verbose cwd D:\MY_PORTFOLIO\Testing-Angular-App\todo-app
+14 verbose os Windows_NT 10.0.19045
+15 verbose node v24.9.0
+16 verbose npm  v11.8.0
+17 verbose exit 0
+18 info ok

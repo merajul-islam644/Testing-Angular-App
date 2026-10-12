@@ -1,0 +1,18 @@
+0 verbose cli C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.8.0
+2 info using node@v24.9.0
+3 silly config load:file:C:\Users\user\AppData\Local\nvm\v24.9.0\node_modules\npm\npmrc
+4 silly config load:file:d:\MY_PORTFOLIO\Testing-Angular-App\.npmrc
+5 silly config load:file:C:\Users\user\.npmrc
+6 silly config load:file:C:\nvm4w\nodejs\etc\npmrc
+7 verbose title npm config get prefix
+8 verbose argv "config" "get" "prefix"
+9 verbose logfile logs-max:10 dir:D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_40_35_998Z-
+10 verbose logfile D:\MY_PORTFOLIO\Testing-Angular-App\npm-cache\_logs\2026-10-12T07_40_35_998Z-debug-0.log
+11 silly logfile done cleaning log files
+12 verbose cwd d:\MY_PORTFOLIO\Testing-Angular-App
+13 verbose os Windows_NT 10.0.19045
+14 verbose node v24.9.0
+15 verbose npm  v11.8.0
+16 verbose exit 0
+17 info ok

@@ -1,0 +1,25 @@
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+
+  .check {
+    flex: 1;
+  }
+
+  &.completed .check {
+    text-decoration: line-through;
+    opacity: 0.55;
+  }
+
+  .actions {
+    opacity: 0.6;
+    transition: opacity 150ms ease;
+  }
+
+  &:hover .actions,
+  &:focus-within .actions {
+    opacity: 1;
+  }
+}

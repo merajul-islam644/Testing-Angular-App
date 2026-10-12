@@ -1,0 +1,48 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Tasks" [level=1] [ref=e6]
+      - paragraph [ref=e7]: A tiny Angular + Material demo
+    - generic [ref=e9]:
+      - generic [ref=e12]:
+        - generic: New task
+        - textbox "New task" [ref=e15]:
+          - /placeholder: e.g. Water the plants
+      - button "Add" [disabled]:
+        - img [aria-hidden]: add
+    - generic [ref=e18]:
+      - radiogroup "Filter tasks" [ref=e19]:
+        - radio "All" [checked] [ref=e20] [cursor=pointer]
+        - radio "Active" [ref=e22] [cursor=pointer]
+        - radio "Done" [ref=e24] [cursor=pointer]
+      - generic [ref=e26]:
+        - generic [ref=e28]:
+          - generic [ref=e30]:
+            - checkbox "Explore the Angular docs" [checked] [ref=e33] [cursor=pointer]
+            - generic [ref=e34] [cursor=pointer]: Explore the Angular docs
+          - generic [ref=e35]:
+            - button "Edit Explore the Angular docs" [ref=e36] [cursor=pointer]:
+              - img [aria-hidden] [ref=e37]: edit
+            - button "Delete Explore the Angular docs" [ref=e40] [cursor=pointer]:
+              - img [aria-hidden] [ref=e41]: delete
+        - generic [ref=e45]:
+          - generic [ref=e47]:
+            - checkbox "Build my first component" [ref=e50] [cursor=pointer]
+            - generic [ref=e51] [cursor=pointer]: Build my first component
+          - generic [ref=e52]:
+            - button "Edit Build my first component" [ref=e53] [cursor=pointer]:
+              - img [aria-hidden] [ref=e54]: edit
+            - button "Delete Build my first component" [ref=e57] [cursor=pointer]:
+              - img [aria-hidden] [ref=e58]: delete
+        - generic [ref=e62]:
+          - generic [ref=e64]:
+            - checkbox "Ship the todo app 🚀" [ref=e67] [cursor=pointer]
+            - generic [ref=e68] [cursor=pointer]: Ship the todo app 🚀
+          - generic [ref=e69]:
+            - button "Edit Ship the todo app 🚀" [ref=e70] [cursor=pointer]:
+              - img [aria-hidden] [ref=e71]: edit
+            - button "Delete Ship the todo app 🚀" [ref=e74] [cursor=pointer]:
+              - img [aria-hidden] [ref=e75]: delete
+      - generic [ref=e78]:
+        - generic [ref=e79]: 2 tasks left
+        - button "Clear completed" [ref=e80]

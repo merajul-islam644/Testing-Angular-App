@@ -1,0 +1,18 @@
+<form class="form" (ngSubmit)="add()">
+  <mat-form-field appearance="outline" class="field">
+    <mat-label>New task</mat-label>
+    <input
+      matInput
+      name="title"
+      autocomplete="off"
+      placeholder="e.g. Water the plants"
+      [ngModel]="title()"
+      (ngModelChange)="title.set($event)"
+    />
+  </mat-form-field>
+
+  <button mat-flat-button type="submit" [disabled]="!title().trim()">
+    <mat-icon>add</mat-icon>
+    Add
+  </button>
+</form>
