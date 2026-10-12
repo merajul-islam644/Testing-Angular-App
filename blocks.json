@@ -1,0 +1,17 @@
+{
+  "project": {
+    "tenantId": "S1e33bd8f2a2545be9787b15dcdde36e4",
+    "apiUrl": "https://blocksapi.dev.slsblx.com",
+    "appDomain": "https://S1e33bd8f2a2545be9787b15dcdde36e4-de30a8f5-b673-4e23-a5f4-cee43b2f4922.slsblx.com"
+  },
+  "data": {
+    "schemas": "blocks/data/schemas",
+    "rules": "blocks/data/rules.json"
+  },
+  "repo": {
+    "branch": "stg",
+    "fullName": "merajul-islam644/Testing-Angular-App",
+    "provider": "github",
+    "url": "https://github.com/merajul-islam644/Testing-Angular-App"
+  }
+}
