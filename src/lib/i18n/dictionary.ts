@@ -1,0 +1,32 @@
+export const defaultDictionary = {
+  "app.name": "SecureVault",
+  "nav.vault": "Vault",
+  "nav.logout": "Sign out",
+  "auth.welcome": "Welcome back",
+  "auth.subtitle": "Sign in to unlock your vault.",
+  "auth.continue": "Continue",
+  "auth.redirecting": "Redirecting...",
+  "auth.notConfigured": "Login is not configured yet.",
+  "auth.failed": "Sign-in failed",
+  "auth.back": "Back to sign in",
+  "common.save": "Save",
+  "common.cancel": "Cancel",
+  "common.delete": "Delete",
+  "common.refresh": "Refresh",
+  "common.loading": "Loading",
+  "common.error": "Something went wrong",
+  "vault.title": "All Items",
+  "vault.loadingTitle": "Loading your vault",
+  "vault.loadingBody": "Retrieving your saved items…",
+  "vault.errorTitle": "Something went wrong — we couldn't load your vault",
+  "vault.retry": "Try Again",
+  "vault.emptyTitle": "Your vault is empty",
+  "vault.emptyBody": "Add your first credential to start protecting your accounts.",
+  "vault.detailEmpty": "Select an item to see its details",
+  "profile.title": "Profile",
+  "notFound.title": "404",
+  "notFound.message": "This page does not exist.",
+  "notFound.home": "Back home"
+} as const;
+
+export type TranslationKey = keyof typeof defaultDictionary;
