@@ -1,0 +1,17 @@
+{
+  "project": {
+    "tenantId": "D1e33bd8f2a2545be9787b15dcdde36e4",
+    "apiUrl": "https://dev-api.blocksdevelopers.com",
+    "appDomain": ""
+  },
+  "data": {
+    "schemas": "blocks/data/schemas",
+    "rules": "blocks/data/rules.json"
+  },
+  "repo": {
+    "branch": "dev",
+    "fullName": "merajul-islam644/Testing-Angular-App",
+    "provider": "github",
+    "url": "https://github.com/merajul-islam644/Testing-Angular-App"
+  }
+}
