@@ -1,12 +1,13 @@
-import { PanelLeft, Search, X } from "lucide-react";
+import { PanelLeft, Plus, Search, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { ReactNode } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { navItems } from "./navItems";
+import { sidebarGroups, bottomNavItems } from "./navItems";
 import { NotificationsMenu } from "./NotificationsMenu";
 import { ShieldLogo } from "./ShieldLogo";
 import { UserMenu } from "./UserMenu";
-import { useT } from "../../lib/i18n/LocalizationProvider";
+import { VaultDetailPanel } from "../../features/vault/VaultDetailPanel";
+import { useVaultUI } from "../../features/vault/VaultUIContext";
 
 const COLLAPSED_KEY = "securevault:sidebar-collapsed";
 const DESKTOP_QUERY = "(min-width: 1025px)";
@@ -42,10 +43,9 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
   const viewport = useViewport();
   const [collapsedPref, setCollapsedPref] = useState(() => localStorage.getItem(COLLAPSED_KEY) === "true");
   const [detailOpen, setDetailOpen] = useState(false);
-  const { t } = useT();
+  const { setSearch, openNewItem } = useVaultUI();
 
   const collapsed = collapsedPref && viewport === "desktop";
-  const activeItem = navItems.find((item) => item.href === activePath);
 
   useEffect(() => {
     localStorage.setItem(COLLAPSED_KEY, String(collapsedPref));
@@ -60,10 +60,7 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
 
   const detailPanel = (
     <div className={["detail-panel", detailAsDrawer ? "drawer" : "", detailOpen ? "open" : ""].filter(Boolean).join(" ")}>
-      <div className="detail-empty">
-        <ShieldLogo size={40} />
-        <p>{t("vault.detailEmpty")}</p>
-      </div>
+      <VaultDetailPanel />
     </div>
   );
 
@@ -75,28 +72,34 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
             {collapsed ? null : (
               <a className="brand" href="/" onClick={(event) => { event.preventDefault(); onNavigate("/"); }}>
                 <ShieldLogo size={30} />
-                <span>{t("app.name")}</span>
+                <span>SecureVault</span>
               </a>
             )}
             <button className="icon-button sidebar-collapse-toggle" onClick={() => setCollapsedPref((value) => !value)} aria-label={collapsed ? "Expand sidebar" : "Collapse sidebar"}>
               <PanelLeft size={16} />
             </button>
           </div>
-          <nav>
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                data-tooltip={t(item.labelKey)}
-                className={activePath === item.href ? "active" : ""}
-                onClick={(event) => {
-                  event.preventDefault();
-                  onNavigate(item.href);
-                }}
-              >
-                <item.icon size={18} />
-                {collapsed ? null : <span>{t(item.labelKey)}</span>}
-              </a>
+          <button className="primary-button new-item-button" onClick={openNewItem}><Plus size={16} /> New Item</button>
+          <nav className="sidebar-nav">
+            {sidebarGroups.map((group) => (
+              <div className="nav-group" key={group.label}>
+                {collapsed ? null : <div className="nav-group-label">{group.label}</div>}
+                {group.items.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    data-tooltip={item.label}
+                    className={activePath === item.href ? "active" : ""}
+                    onClick={(event) => {
+                      event.preventDefault();
+                      onNavigate(item.href);
+                    }}
+                  >
+                    <item.icon size={18} />
+                    {collapsed ? null : <span>{item.label}</span>}
+                  </a>
+                ))}
+              </div>
             ))}
           </nav>
         </aside>
@@ -104,13 +107,9 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
 
       <div className="content">
         <header className="topbar">
-          <div className="breadcrumb">
-            {activeItem ? <activeItem.icon size={16} /> : null}
-            <span>{activeItem ? t(activeItem.labelKey) : t("app.name")}</span>
-          </div>
           <div className="topbar-search">
             <Search size={15} />
-            <input type="text" placeholder="Search in your vault…" aria-label="Search in your vault" />
+            <input type="text" placeholder="Search in your vault…" aria-label="Search in your vault" onChange={(e) => setSearch(e.target.value)} />
             <kbd>⌘K</kbd>
           </div>
           <div className="topbar-spacer" />
@@ -137,7 +136,7 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
       ) : null}
 
       <nav className="bottom-nav">
-        {navItems.map((item) => (
+        {bottomNavItems.map((item) => (
           <a
             key={item.href}
             href={item.href}
@@ -148,7 +147,7 @@ export function AppShell({ activePath, children, onNavigate }: { activePath: str
             }}
           >
             <item.icon size={20} />
-            <span>{t(item.labelKey)}</span>
+            <span>{item.label}</span>
           </a>
         ))}
       </nav>
